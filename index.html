@@ -1636,11 +1636,11 @@
                 if ((currentHour >= 7.0 && currentHour < 11.5) || (currentHour >= 14.5 && currentHour < 21.5)) {
                     isOpen = true;
                 }
-            } else if (day === 6) {
-                if (rowSat) rowSat.classList.add('active-today');
-                if (currentHour >= 8.0 && currentHour < 11.0) {
-                    isOpen = true;
-                }
+           } else if (day === 6) {
+    if (rowSat) rowSat.classList.add('active-today');
+    if (currentHour >= 8.0 && currentHour < 11.5) {
+        isOpen = true;
+    }
             } else {
                 if (rowSun) rowSun.classList.add('active-today');
             }
