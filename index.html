@@ -1387,10 +1387,10 @@
         let currentTrackIdx = -1;
         let musicFadeTimer = null;
 
-        async function loadMusicFromFolder() {
-            try {
-                const res = await fetch('https://api.github.com/repos/onceoncegrafica-1111/dynamicagym2/contents/music');
-                if (res.ok) {
+       async function loadMusicFromFolder() {
+    try {
+        const res = await fetch('https://api.github.com/repos/linkuniversal/dynamicgym2/contents/music');
+        if (res.ok) {
                     const files = await res.json();
                     const tracks = files
                         .filter(f => f.type === 'file' && f.name.toLowerCase().endsWith('.mp3'))
